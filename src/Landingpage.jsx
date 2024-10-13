@@ -1,4 +1,4 @@
-import './LandingPage.css';
+import './Landingpage.css';
 import { FaCheckCircle, FaBolt, FaStar, FaLock, FaHeart } from 'react-icons/fa';
 
 function LandingPage() {
