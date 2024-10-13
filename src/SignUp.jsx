@@ -12,7 +12,7 @@ const SignUp = () => {
     console.log(form);
     setError('Form submitted');
     // Perform signup logic here
-    // navigate('/dashboard');
+    navigate('/chatroom');
   };
 
   const handleChange = (e) => {

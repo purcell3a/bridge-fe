@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element: <LandingPage />,
   },
   {
-    path: "chatroom",
+    path: "/chatroom",
     element: <Chatroom />,
   },
 ]);
