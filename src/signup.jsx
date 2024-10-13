@@ -26,19 +26,39 @@ const SignUp = () => {
     <div className="Signup">
       <img src="bridge.webp" alt="logo" className="logo" />
       <form onSubmit={handleSubmit}>
-        <label>Email: </label>
-        <input placeholder="Email" type="email" name="email" value={form.email} onChange={handleChange} />
+        <label>Email:</label>
+        <input
+          placeholder="Email"
+          type="email"
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+        />
 
-        <label>Name: </label>
-        <input placeholder="Name" type="text" name="name" value={form.name} onChange={handleChange} />
+        <label>Name:</label>
+        <input
+          placeholder="Name"
+          type="text"
+          name="name"
+          value={form.name}
+          onChange={handleChange}
+        />
 
-        <label>Password: </label>
-        <input placeholder="Password" type="password" name="password" value={form.password} onChange={handleChange} />
+        <label>Password:</label>
+        <input
+          placeholder="Password"
+          type="password"
+          name="password"
+          value={form.password}
+          onChange={handleChange}
+        />
 
         <input type="submit" value="Sign Up" />
       </form>
       {error && <div className="error-message">{error}</div>}
-      <Link className="form-link" to="/signin">Already have an account? Sign In</Link>
+      <Link className="form-link" to="/signin">
+        Already have an account? Sign In
+      </Link>
     </div>
   );
 };

@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Signup.css';  // Reuse the Signup CSS or create a separate one for SignIn
+import './Signup.css';
 
-const SignIn = () => {
+const SignUp = () => {
   const navigate = useNavigate();
-  const [form, setForm] = useState({ email: '', password: '' });
+  const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
-    setError('Sign In submitted');
-    // Perform sign-in logic here
+    setError('Form submitted');
+    // Perform signup logic here
     // navigate('/dashboard');
   };
 
@@ -23,21 +23,35 @@ const SignIn = () => {
   };
 
   return (
-    <div className="SignIn">
+    <div className="Signup">
       <img src="bridge.webp" alt="logo" className="logo" />
       <form onSubmit={handleSubmit}>
-        <label>Email: </label>
-        <input placeholder="Email" type="email" name="email" value={form.email} onChange={handleChange} />
+        <label>Email:</label>
+        <input
+          placeholder="Email"
+          type="email"
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+        />
 
-        <label>Password: </label>
-        <input placeholder="Password" type="password" name="password" value={form.password} onChange={handleChange} />
+        <label>Password:</label>
+        <input
+          placeholder="Password"
+          type="password"
+          name="password"
+          value={form.password}
+          onChange={handleChange}
+        />
 
-        <input type="submit" value="Sign In" />
+        <input type="submit" value="Sign Up" />
       </form>
       {error && <div className="error-message">{error}</div>}
-      <Link className="form-link" to="/signup">Don't have an account? Sign Up</Link>
+      <Link className="form-link" to="/signin">
+        Already have an account? Sign In
+      </Link>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;
