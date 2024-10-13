@@ -4,10 +4,11 @@ import SignUp from './signup.jsx';
 import SignIn from './SignIn.jsx';
 import Chatroom from './Chatroom.jsx';
 
-function App() {
+export const App = () => {
   return (
     <Router>
       <Routes>
+        <Header />
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
@@ -17,6 +18,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
