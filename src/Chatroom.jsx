@@ -18,41 +18,35 @@ function Chatroom() {
         console.log('Submitting symptom:', prompt);  // Log the symptom being sent
     
         // Log the symptom via the /log-symptom endpoint
-        fetch(`${backendUrl}/symptoms/log-symptom`, {
+        fetch('http://localhost:8000/symptoms/log-symptom', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                symptom: prompt,  // Send the user's symptom input
+                symptom: prompt, // User's symptom input
+                current_user: {
+                    id: 1, // Example user details; replace with actual user data
+                    name: "Current User",
+                    password: "password", // Replace with real authentication
+                    email: "current@user.com",
+                }
             }),
         })
-        .then(response => {
-            console.log('Response status:', response.status);  // Log status code
-            console.log('Response headers:', response.headers);  // Log headers
-    
-            if (!response.ok) {
-                // If the response is not ok (status 4xx or 5xx), log the error status
-                console.error('Error response:', response.statusText);
-                throw new Error(`Error: ${response.statusText}`);
-            }
-    
-            // Attempt to parse the JSON response
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
-            // Log the parsed data before processing it
-            console.log('Response data:', data);
-    
-            // Update the response message upon successful symptom logging
-            setResponse('Symptom logged successfully: ' + data.logged_symptom);
-            setPrompt('');  // Clear the input field after logging
+            console.log('Response:', data)
+            const confirmationMessage = `System: Symptom logged successfully: ${prompt}`;
+            setResponse(confirmationMessage); // Update the response message
+            setConversation(prev => [...prev, userMessage, confirmationMessage]); // Update conversation
+            setPrompt(''); // Clear the input field after logging
         })
         .catch(err => {
-            // Log the error if there is a problem
-            console.error('Fetch error:', err);
-            setResponse('Error logging symptom, please try again.');
-        });
+            // const errorMessage = 'System: Error logging symptom, please try again.';
+            // setResponse(errorMessage);
+            // // setConversation(prev => [...prev, userMessage]); // Update conversation
+            console.error('Error:', err)
+        })
     };
     
 
