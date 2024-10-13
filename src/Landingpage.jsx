@@ -1,5 +1,6 @@
 import './Landingpage.css';
 import { FaCheckCircle, FaBolt, FaStar, FaLock, FaHeart } from 'react-icons/fa';
+import { Link } from "react-router-dom"; // Import Link from React Router
 
 function LandingPage() {
   return (
@@ -15,8 +16,8 @@ function LandingPage() {
           <a href="#features">Features</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <button  href="/signin"  className="secondary-btn">Sign In</button>
-          <button className="primary-btn">Sign Up</button>
+          <Link to="/signin" className="secondary-btn">Sign In</Link> {/* Changed to Link */}
+          <Link to="/signup" className="primary-btn">Sign Up</Link> {/* Changed to Link */}
         </nav>
       </header>
 
@@ -31,8 +32,8 @@ function LandingPage() {
             <li><FaCheckCircle className="icon" /> Tailored Suggestions</li>
           </ul>
           <div className="cta-buttons">
-            <button className="primary-btn">Get Started</button>
-            <button className="secondary-btn">View Demo</button>
+            <Link to="/signup" className="primary-btn">Get Started</Link> {/* Changed to Link */}
+            <Link to="/demo" className="secondary-btn">View Demo</Link> {/* Changed to Link */}
           </div>
         </div>
         <div className="p2">
@@ -74,7 +75,7 @@ function LandingPage() {
         <h3>Empowering Your Health Journey</h3>
         <h1>Revolutionize Your Health</h1>
         <div className="cta-buttons">
-          <button className="primary-btn">Get Started </button>
+          <Link to="/signup" className="primary-btn">Get Started </Link> {/* Changed to Link */}
         </div>
       </section>
     </div>
