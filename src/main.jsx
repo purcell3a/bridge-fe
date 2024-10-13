@@ -2,7 +2,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import './app.css';
+import './App.css';
 import Layout from './Layout.jsx'; // Import the new Layout component
 import SignUp from './SignUp.jsx';
 import SignIn from './SignIn.jsx';
