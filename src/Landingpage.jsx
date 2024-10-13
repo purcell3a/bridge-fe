@@ -6,21 +6,6 @@ function LandingPage() {
   return (
     <div className="Landing-Page">
       <Header/>
-      {/* <header className="header">
-        <div className="logo">
-          <img src="bridge.webp" alt="Bridge Logo" className="logo-img" />
-          <div>Bridge</div>
-        </div>
-        <nav className="routes">
-          <a href="/">Home</a>
-          <a href="#features">Features</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <Link to="/signin" className="secondary-btn">Sign In</Link> {/* Changed to Link */}
-          {/* <Link to="/signup" className="primary-btn">Sign Up</Link> Changed to Link */}
-        {/* </nav> */}
-      {/* </header> */} 
-
       {/* Info Section */}
       <section className="info">
         <div className="p1">
