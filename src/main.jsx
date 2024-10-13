@@ -7,6 +7,7 @@ import SignIn from './SignIn.jsx';
 import './index.css'
 import LandingPage from './Landingpage.jsx';
 import Chatroom from './Chatroom.jsx';
+import SymptomEntry from './SymptomEntry.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     path: "/chatroom",
     element: <Chatroom />,
   },
+  {
+    path: "/symptoms",
+    element: <SymptomEntry />,
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
