@@ -32,7 +32,6 @@ function LandingPage() {
             <li><FaCheckCircle className="icon" /> Tailored Suggestions</li>
           </ul>
           <div className="cta-buttons">
-            <Link to="/signup" className="primary-btn">Get Started</Link> {/* Changed to Link */}
             <Link to="/demo" className="secondary-btn">View Demo</Link> {/* Changed to Link */}
           </div>
         </div>
