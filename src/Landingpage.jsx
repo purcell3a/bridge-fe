@@ -17,7 +17,6 @@ function LandingPage() {
           </ul>
           <div className="cta-buttons">
             <Link to="/chatroom" className="primary-btn">Meet Bridge</Link> {/* Changed to Link */}
-            <Link to="/demo" className="secondary-btn">View Demo</Link> {/* Changed to Link */}
           </div>
         </div>
         <div className="p2">
