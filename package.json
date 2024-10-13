@@ -9,8 +9,8 @@
   "preview": "vite preview",
   "heroku-postbuild": "npm run build",
   "start": "npm run serve-heroku",
-  "postinstall": "npm run build",
   "serve-heroku": "vite preview --host 0.0.0.0 --port $PORT",
+  "postinstall": "npm run build",
   "relay": "relay-compiler"
 },
   "dependencies": {
