@@ -14,7 +14,7 @@ export const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/symptoms" element={<SymptomEntry />} />
-        <Route path="/chat" element={<Chatroom />} />
+        <Route path="/chatroom" element={<Chatroom />} />
 //         <Route path="/dashboard" element={<div>Dashboard</div>} />
         <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Routes>

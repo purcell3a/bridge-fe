@@ -29,8 +29,8 @@ function Chatroom () {
            <div className="chat">
 
 
-// const Chatroom = () => {
-//     return (
+{/* // const Chatroom = () => { */}
+{/* //     return (
 //         <div className='Chatroom'>
 //             <div className="header">
 //                 <div className='logo'>
@@ -45,7 +45,7 @@ function Chatroom () {
 //                     <a href="/signin">Sign In</a>
 //                 </div>
 //             </div>
-//             <div className="chat">
+            // <div className="chat"> */}
 
                 <div className="sent">
                     <p>Please Tell me my Age and hair color</p>
