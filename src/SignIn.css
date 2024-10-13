@@ -97,3 +97,9 @@ form input[type="submit"]:hover {
     width: 8rem;
     margin-bottom: 1rem;
 }
+
+
+.form-values p {
+    color: black; /* Ensure the text color is black */
+    font-size: 1rem; /* Adjust the font size if needed */
+}

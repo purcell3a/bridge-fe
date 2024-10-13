@@ -47,6 +47,7 @@ const SignUp = () => {
 
         <input type="submit" value="Sign Up" />
       </form>
+
       {error && <div className="error-message">{error}</div>}
       <Link className="form-link" to="/signin">
         Already have an account? Sign In

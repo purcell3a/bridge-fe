@@ -15,7 +15,8 @@
 }
 
 .symptom-entry {
-    width:50%
+    width:50%;
+}
 
 .SymptomEntry input{
     border: 1px solid black;

@@ -85,3 +85,33 @@ form input[type="submit"]:hover {
     width: 8rem;
     margin-bottom: 1rem;
 }
+
+
+
+.form-values p {
+    color: black; /* Ensure the text color is black */
+    font-size: 1rem; /* Adjust the font size if needed */
+}
+
+/* Make sure the input text is visible */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    color: black; /* Ensure the text color inside input is black */
+    background-color: white; /* Ensure the background is white */
+    border: 1px solid #ccc; /* Optional: for a clean border */
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border 0.3s;
+}
+
+input::placeholder {
+    color: #999; /* Make placeholder text gray */
+}
+
+input:focus {
+    border-color: #007BFF; /* Blue border when the input is focused */
+    outline: none; /* Remove the default blue outline */
+}
