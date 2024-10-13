@@ -1,6 +1,6 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './Landingpage';
-import SignUp from './afadf.jsx';
+import SignUp from './SignUp.jsx';
 import SignIn from './SignIn.jsx';
 
 function App() {
