@@ -16,7 +16,7 @@ body {
 }
 
 /* Form styles */
-form {
+#Signup form {
     background-color: #ffffff00; /* White background for the form */
     padding: 2rem;
     border-radius: 10px;

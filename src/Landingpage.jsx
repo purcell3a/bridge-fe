@@ -1,12 +1,12 @@
 import './Landingpage.css';
 import { FaCheckCircle, FaBolt, FaStar, FaLock, FaHeart } from 'react-icons/fa';
 import { Link } from "react-router-dom"; // Import Link from React Router
-
+import Header from './Components/Header.jsx'
 function LandingPage() {
   return (
     <div className="Landing-Page">
-      {/* Header */}
-      <header className="header">
+      <Header/>
+      {/* <header className="header">
         <div className="logo">
           <img src="bridge.webp" alt="Bridge Logo" className="logo-img" />
           <div>Bridge</div>
@@ -17,9 +17,9 @@ function LandingPage() {
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
           <Link to="/signin" className="secondary-btn">Sign In</Link> {/* Changed to Link */}
-          <Link to="/signup" className="primary-btn">Sign Up</Link> {/* Changed to Link */}
-        </nav>
-      </header>
+          {/* <Link to="/signup" className="primary-btn">Sign Up</Link> Changed to Link */}
+        {/* </nav> */}
+      {/* </header> */} 
 
       {/* Info Section */}
       <section className="info">
@@ -81,5 +81,7 @@ function LandingPage() {
     </div>
   );
 }
+
+
 
 export default LandingPage;
