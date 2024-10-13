@@ -1,6 +1,20 @@
 import './Chatroom.css'
-
+import { useState } from 'react'
 function Chatroom () {
+    const [prompt, setPrompt] = useState('')
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(prompt)
+        fetch('http://localhost:8000/utils/call_kindo_api', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                prompt: prompt,
+            }),
+        })
+    }
     return (
         <div className='Chatroom'>
             <div className="header">
@@ -25,7 +39,8 @@ function Chatroom () {
                 </div>
                 
             </div>
-            <input type="text" placeholder='Enter Prompt' />
+            <input type="text" value={prompt} placeholder='Enter Prompt' onChange={e=>setPrompt(e.target.value)} />
+            <input type="submit" value="Send" handleSubmit={e=>console.log(prompt)} />
         </div>
     )
 }
