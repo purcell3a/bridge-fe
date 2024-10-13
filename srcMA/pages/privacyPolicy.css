@@ -1,0 +1,18 @@
+.privacy-policy-container {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0rem;
+  padding: 3rem;
+  min-height: 50vh;
+  color: #F2F2eb;
+  padding: 7%;
+  background-color: #0C0F18;
+  width: 100%;
+}
+
+  /* Style headers to be bold */
+h1, h2 {
+  font-weight: bold;
+}
+  

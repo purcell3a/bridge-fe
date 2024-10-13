@@ -1,0 +1,111 @@
+{
+  "navItems": [
+    {
+      "title": "Home & Garden",
+      "navLink": "",
+      "children": {
+        "items": [
+          {
+            "title": "Cleaning Supplies",
+            "navLink": "/shop/home-and-garden/cleaning-supplies"
+          },
+          {
+            "title": "Kitchen & Dining",
+            "navLink": "/shop/home-and-garden/kitchen-and-dining"
+          },
+          {
+            "title": "Furniture & Art",
+            "navLink": "/shop/home-and-garden/furniture-and-art"
+          },
+          {
+            "title": "Garden",
+            "navLink": "/shop/home-and-garden/garden"
+          },
+          {
+            "title": "Bedding & Linens",
+            "navLink": "/shop/home-and-garden/bedding-and-linens"
+          },
+          {
+            "title": "Home Decor",
+            "navLink": "/shop/home-and-garden/home-decor"
+          },
+          {
+            "title": "Lighting & Lamps",
+            "navLink": "/shop/home-and-garden/lighting-and-lamps"
+          },
+          {
+            "title": "Bath & Laundry",
+            "navLink": "/shop/home-and-garden/bath-and-laundry"
+          }
+        ],
+        "length": 4
+      }
+    },
+
+    {
+      "title": "Clothing & Accessories",
+      "navLink": "",
+      "children": {
+        "items": [
+          {
+            "title": "Clothing",
+            "navLink": "/shop"
+          },
+          {
+            "title": "Accessories",
+            "navLink": "/shop"
+          },
+          {
+            "title": "Bags & Purses",
+            "navLink": "/shop"
+          }
+        ],
+        "length": 3
+      }
+    },
+
+    {
+      "title": "Health, Bath & Beauty",
+      "navLink": "",
+      "children": {
+        "items": [
+          {
+            "title": "Beauty",
+            "navLink": "/shop"
+          },
+          {
+            "title": "Bath & Body",
+            "navLink": "/shop"
+          },
+          {
+            "title": "Health",
+            "navLink": "/shop"
+          }
+        ],
+        "length": 2
+      }
+    },
+
+    {
+      "title": "Toys, Kids & Babies",
+      "navLink": "",
+      "children": {
+        "items": [
+          {
+            "title": "Clothing",
+            "navLink": "/shop"
+          },
+          {
+            "title": "Shoes",
+            "navLink": "/shop"
+          },
+          {
+            "title": "Toys",
+            "navLink": "/shop"
+          }
+        ],
+        "length": 3
+      }
+    }
+  ]
+}
