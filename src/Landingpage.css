@@ -20,13 +20,13 @@ body, html {
 }
 
 /* Header */
-.header {
+/* .header {
     background-color: #F7DDDD;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-}
+} */
 
 .logo {
     display: flex;

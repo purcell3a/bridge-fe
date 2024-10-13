@@ -12,6 +12,26 @@ const SignUp = () => {
     console.log(form);
     setError('Form submitted');
     // Perform signup logic here
+    // fetch("https://bridge-be-73a7643f318b.herokuapp.com/",
+    // fetch("http://localhost:8000/users/create-user", {
+    //   method: "POST",
+    //   credentials: "include",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     name: form.name,
+    //     email: form.email,
+    //     password: form.password,
+    //   }),
+    // }).then((res) => {
+    //   if (res.status === 201) {
+    //     setError('');
+    //     navigate('/dashboard');
+    //   } else {
+    //     setError('Something went wrong');
+    //   }
+    // });
     navigate('/chatroom');
   };
 
