@@ -4,29 +4,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body, html {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #FBE8E8;
-}
-
+  
 /* Landing Page Layout */
 .Landing-Page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-}
-
-/* Header */
-/* .header {
-    background-color: #F7DDDD;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-} */
+    max-width: 100%;
+    margin-top: 20vh;
+
+}
 
 .logo {
     display: flex;
@@ -42,49 +31,6 @@ body, html {
     margin-right: 10px;
 }
 
-.routes {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.routes a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    padding: 10px;
-}
-
-.sign-in-btn {
-    color: #333;
-    background-color: transparent;
-    border: 2px solid #333;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.sign-in-btn:hover {
-    color: #007BFF;
-    border-color: #007BFF;
-}
-
-.cta-btn {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #0056b3;
-}
-
 /* Info Section */
 .info {
     display: flex;
@@ -92,6 +38,7 @@ body, html {
     align-items: center;
     padding: 80px 60px;
     background-color: #FBE8E8;
+    width: 100%;
 }
 
 .p1 {
@@ -128,22 +75,6 @@ body, html {
     margin-right: 10px;
 }
 
-.learn-more-btn {
-    padding: 12px 25px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.learn-more-btn:hover {
-    color: #007BFF;
-    border-color: #007BFF;
-}
-
 .p2 {
     flex: 1;
     display: flex;
@@ -166,13 +97,6 @@ body, html {
 .seamless-communication h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
 }
 
 .benefits {

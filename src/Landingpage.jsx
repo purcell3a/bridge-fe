@@ -5,7 +5,6 @@ import Header from './Components/Header.jsx'
 function LandingPage() {
   return (
     <div className="Landing-Page">
-      <Header/>
       {/* Info Section */}
       <section className="info">
         <div className="p1">

@@ -1,74 +1,79 @@
-
+/* Chatroom Styling */
 .Chatroom {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-#root {
-    padding: 0;
-    width: 100vw;
-}
-.routes {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding-right: 30px;
-}
-.logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 700;
-    font-size: 32px;
-    color: #000000;
-    padding: 1rem;
-}
-.logo img {
-    padding: 10px;
-
-}
-.chat {
-    height: 80vh;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-}
-.chat .sent {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-}
-.chat .recieved {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-.recieved p {
-    background-color: lightblue;
-    border: 1 px solid grey;
-    border-radius: 5px;
-}
-.sent p {
-     background-color: lightgreen;
-    border: 1 px solid grey;
-    border-radius: 5px;
-}
-.Chatroom input{
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 45rem;
-    height: 2rem;
-}
-
-.Chatroom form {
-    margin-bottom:20px;
-}
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px; /* Adds space below the header */
+    background-color: #f9e4e4; /* Soft background */
+    min-height: calc(100vh - 150px); /* Full height minus header */
+  }
+  
+  /* Message Box */
+  .status-message {
+    padding: 15px;
+    background-color: #eef4f8;
+    border-radius: 8px;
+    color: #5a5a5a;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-message {
+    padding: 15px;
+    background-color: #fdecea;
+    border-radius: 8px;
+    color: #d32f2f;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Field Styling */
+  input[type='text'] {
+    width: 320px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type='submit'] {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type='submit']:hover {
+    background-color: #357ABD;
+  }
+  
+  /* Generate Doctor Summary Button */
+  button {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  

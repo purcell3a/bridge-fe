@@ -1,5 +1,4 @@
 
-import Header from "./Components/Header"
 import { useState} from 'react'
 function SymptomEntry() {
 
@@ -20,8 +19,6 @@ function SymptomEntry() {
     }
     return (
         <>
-        <Header />
-
         <div className="SymptomEntry">
             <section classname="symptom-entry">
             <form className="SymptomForm" onSubmit={handleSubmit}>

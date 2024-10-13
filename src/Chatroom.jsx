@@ -1,6 +1,5 @@
 import './Chatroom.css'
 import { useState } from 'react'
-import Header from './Components/Header.jsx'
 
 function Chatroom() {
     const [prompt, setPrompt] = useState('') // User input (symptom)
@@ -62,7 +61,6 @@ function Chatroom() {
 
     return (
         <div className='Chatroom'>
-            <Header />
 
             {/* Chat interface */}
             <div className="chat">
