@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Signup.css';
 
-function SignUp() {
+const SignUp = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [error, setError] = useState('');
@@ -10,9 +10,9 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
-    setError('Form submitted'); // This is just a placeholder for testing
-    // Perform signup logic here (e.g., API request)
-    // If successful: navigate('/dashboard');
+    setError('Form submitted');
+    // Perform signup logic here
+    // navigate('/dashboard');
   };
 
   const handleChange = (e) => {
@@ -41,6 +41,6 @@ function SignUp() {
       <Link className="form-link" to="/signin">Already have an account? Sign In</Link>
     </div>
   );
-}
+};
 
 export default SignUp;

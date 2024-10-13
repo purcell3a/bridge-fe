@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Signup.css';  // You can reuse this or create a separate CSS file for SignIn
+import './Signup.css';  // Reuse the Signup CSS or create a separate one for SignIn
 
-function SignIn() {
+const SignIn = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
@@ -11,8 +11,8 @@ function SignIn() {
     e.preventDefault();
     console.log(form);
     setError('Sign In submitted');
-    // Perform sign-in logic here (e.g., API request)
-    // If successful: navigate('/dashboard');
+    // Perform sign-in logic here
+    // navigate('/dashboard');
   };
 
   const handleChange = (e) => {
@@ -38,6 +38,6 @@ function SignIn() {
       <Link className="form-link" to="/signup">Don't have an account? Sign Up</Link>
     </div>
   );
-}
+};
 
 export default SignIn;
