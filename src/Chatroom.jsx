@@ -39,8 +39,10 @@ function Chatroom () {
                 </div>
                 
             </div>
+            <form onSubmit={handleSubmit}>
             <input type="text" value={prompt} placeholder='Enter Prompt' onChange={e=>setPrompt(e.target.value)} />
-            <input type="submit" value="Send" handleSubmit={e=>console.log(prompt)} />
+            <input type="submit" value="Send"  />
+            </form>
         </div>
     )
 }

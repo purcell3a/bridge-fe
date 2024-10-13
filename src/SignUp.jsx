@@ -32,7 +32,7 @@ const SignUp = () => {
     //     setError('Something went wrong');
     //   }
     // });
-    navigate('/dashboard');
+    navigate('/chatroom');
   };
 
   const handleChange = (e) => {
