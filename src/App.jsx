@@ -5,19 +5,21 @@ import SignIn from './SignIn.jsx';
 import SymptomEntry from './SymptomEntry.jsx';
 import Chatroom from './Chatroom.jsx';
 
-function App() {
+export const App = () => {
   return (
     <Router>
       <Routes>
+        <Header />
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/chatroom" element={<Chatroom />} />
         <Route path="/symptoms" element={<SymptomEntry />} />
+        <Route path="/chat" element={<Chatroom />} />
+//         <Route path="/dashboard" element={<div>Dashboard</div>} />
         <Route path="*" element={<div>404 - Page Not Found</div>} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
