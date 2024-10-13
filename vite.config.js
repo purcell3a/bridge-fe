@@ -1,23 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
-import relay from "vite-plugin-relay";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), relay],
+  plugins: [react()],
   server: {
-    port: process.env.PORT || 3000, // Use Heroku's port if available
-    // port: 3000, // Local development port
-    // open: true, // Automatically open the browser on server start
+    port: 3000, // Set a port for the dev server
   },
-  resolve: {
-    alias: [
-      { find: "@", replacement: path.resolve(__dirname, "src") },
-      { find: "images", replacement: path.resolve(__dirname, "img") },
-    ],
-  },
-  // optimizeDeps: {
-  //   include: ['jwt-decode']
-  // }
 });
