@@ -9,7 +9,7 @@ function Chatroom() {
     // Set backend URL based on the environment (development or production)
     const backendUrl = process.env.NODE_ENV === 'development' 
         ? 'http://localhost:8000' 
-        : 'https://bridge-fe-8aeb1e1bce30.herokuapp.com/'; 
+        : 'https://bridge-be-73a7643f318b.herokuapp.com'; 
 
     // Function to handle the symptom submission
     const handleSubmit = (e) => {
