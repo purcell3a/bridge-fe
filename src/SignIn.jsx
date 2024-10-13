@@ -49,7 +49,7 @@ const SignUp = () => {
       </form>
 
       {error && <div className="error-message">{error}</div>}
-      <Link className="form-link" to="/signin">
+      <Link className="form-link" to="/signup">
         Already have an account? Sign In
       </Link>
     </div>
