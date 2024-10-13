@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
-import SignUp from './SignUp.jsx';
+import SignUp from './afadf.jsx';
 import SignIn from './SignIn.jsx';
 import './index.css'
 import LandingPage from './Landingpage.jsx';
